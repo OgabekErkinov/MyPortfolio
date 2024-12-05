@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/Components/Projects/Projects.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1733221363316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733221373174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import ProjectCard from \"../Cards/ProjectCard\";\r\n import { projects } from \"../../Info/myInfo\";\r\n import { Container, Wrapper, Title, Desc, CardContainer } from \"./Styled-Components\";\r\n+import { Link } from \"react-router-dom\";\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1733221378640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n             <Desc>Here some of my practices</Desc>\r\n \r\n             <CardContainer>\r\n                 {projects.map((project, idx) => {\r\n-                    return <Link<ProjectCard key={idx} project = {project}/>\r\n+                    return <Link>\r\n+                    </Link>\r\n                 })}\r\n                 \r\n             </CardContainer>\r\n         </Wrapper>\r\n"
+                },
+                {
+                    "date": 1733221385531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n \r\n             <CardContainer>\r\n                 {projects.map((project, idx) => {\r\n                     return <Link>\r\n-                    </Link>\r\n+                             <ProjectCard key={idx} project = {project}/>\r\n+                           </Link>\r\n                 })}\r\n                 \r\n             </CardContainer>\r\n         </Wrapper>\r\n"
+                },
+                {
+                    "date": 1733221392454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n             <Desc>Here some of my practices</Desc>\r\n \r\n             <CardContainer>\r\n                 {projects.map((project, idx) => {\r\n-                    return <Link>\r\n-                             <ProjectCard key={idx} project = {project}/>\r\n+                    return <Link key={idx}>\r\n+                             <ProjectCard  project = {project}/>\r\n                            </Link>\r\n                 })}\r\n                 \r\n             </CardContainer>\r\n"
+                },
+                {
+                    "date": 1733221399225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             <Desc>Here some of my practices</Desc>\r\n \r\n             <CardContainer>\r\n                 {projects.map((project, idx) => {\r\n-                    return <Link key={idx}>\r\n+                    return <Link  key={idx}>\r\n                              <ProjectCard  project = {project}/>\r\n                            </Link>\r\n                 })}\r\n                 \r\n"
+                },
+                {
+                    "date": 1733221407419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             <Desc>Here some of my practices</Desc>\r\n \r\n             <CardContainer>\r\n                 {projects.map((project, idx) => {\r\n-                    return <Link  key={idx}>\r\n+                    return <Link to key={idx}>\r\n                              <ProjectCard  project = {project}/>\r\n                            </Link>\r\n                 })}\r\n                 \r\n"
+                },
+                {
+                    "date": 1733221413520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             <Desc>Here some of my practices</Desc>\r\n \r\n             <CardContainer>\r\n                 {projects.map((project, idx) => {\r\n-                    return <Link to key={idx}>\r\n+                    return <Link to={project.} key={idx}>\r\n                              <ProjectCard  project = {project}/>\r\n                            </Link>\r\n                 })}\r\n                 \r\n"
+                }
+            ],
+            "date": 1733221363316,
+            "name": "Commit-0",
+            "content": "import ProjectCard from \"../Cards/ProjectCard\";\r\nimport { projects } from \"../../Info/myInfo\";\r\nimport { Container, Wrapper, Title, Desc, CardContainer } from \"./Styled-Components\";\r\n\r\n\r\n\r\n\r\nconst Projects = () => {\r\n\r\n  return (\r\n    <Container id = 'projects'>\r\n        <Wrapper>\r\n            <Title>Projects</Title>\r\n            <Desc>Here some of my practices</Desc>\r\n\r\n            <CardContainer>\r\n                {projects.map((project, idx) => {\r\n                    return <Link<ProjectCard key={idx} project = {project}/>\r\n                })}\r\n                \r\n            </CardContainer>\r\n        </Wrapper>\r\n    </Container>\r\n  )\r\n}\r\n\r\nexport default Projects\r\n"
+        }
+    ]
+}

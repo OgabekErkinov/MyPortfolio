@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/Components/Skills/Skills.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1732529915051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733373169504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,12 @@\n     <Container id = 'skills'>\r\n        <Wrapper>\r\n         <Title>Skills</Title>\r\n         <Desc>\r\n-          Here some of my skills which on which I have learnt\r\n+          Here some of my skills which on which I have learned\r\n         </Desc>\r\n-        \r\n+\r\n         <SkillsContainer>\r\n-          \r\n           {skills.map((item, idx) => {\r\n             return <Skill key={idx}>\r\n                        <SkillTitle>{item.title}</SkillTitle>\r\n                        <SkillList>\r\n"
+                },
+                {
+                    "date": 1733395878034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n                        <SkillTitle>{item.title}</SkillTitle>\r\n                        <SkillList>\r\n                         {item.skill.map((item, idx) => {\r\n                           return <SkillItem key={idx}>\r\n-                                      <SkillImage src = {item.image}/>\r\n+                                      <SkillImage  src = {item.image}/>\r\n                                       {item.name}\r\n                                  </SkillItem>  \r\n                         })}\r\n                        </SkillList>\r\n"
+                },
+                {
+                    "date": 1733395883431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n                        <SkillTitle>{item.title}</SkillTitle>\r\n                        <SkillList>\r\n                         {item.skill.map((item, idx) => {\r\n                           return <SkillItem key={idx}>\r\n-                                      <SkillImage s src = {item.image}/>\r\n+                                      <SkillImage st src = {item.image}/>\r\n                                       {item.name}\r\n                                  </SkillItem>  \r\n                         })}\r\n                        </SkillList>\r\n"
+                }
+            ],
+            "date": 1732529915051,
+            "name": "Commit-0",
+            "content": "import { skills } from '../../Info/myInfo'\r\nimport { Container, Wrapper, Title, Desc, SkillsContainer, Skill, SkillTitle, SkillList, SkillItem, SkillImage } from './Styled-Components'\r\n\r\nconst Skills = () => {\r\n  return (\r\n    <Container id = 'skills'>\r\n       <Wrapper>\r\n        <Title>Skills</Title>\r\n        <Desc>\r\n          Here some of my skills which on which I have learnt\r\n        </Desc>\r\n        \r\n        <SkillsContainer>\r\n          \r\n          {skills.map((item, idx) => {\r\n            return <Skill key={idx}>\r\n                       <SkillTitle>{item.title}</SkillTitle>\r\n                       <SkillList>\r\n                        {item.skill.map((item, idx) => {\r\n                          return <SkillItem key={idx}>\r\n                                      <SkillImage src = {item.image}/>\r\n                                      {item.name}\r\n                                 </SkillItem>  \r\n                        })}\r\n                       </SkillList>\r\n                   </Skill>\r\n          })}\r\n\r\n          \r\n          \r\n        </SkillsContainer>\r\n       </Wrapper>\r\n\r\n    </Container>\r\n  )\r\n}\r\n\r\nexport default Skills\r\n"
+        }
+    ]
+}

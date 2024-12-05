@@ -15,7 +15,7 @@ const Layout = () => {
        </Wrapper>
        <Wrapper>
            <Education/>
-        </Wrapper>   
+      </Wrapper>   
     </Body>
   </ThemeProvider>
   )

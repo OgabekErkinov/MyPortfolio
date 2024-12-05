@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/Layout/StyledComponents.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1733221045375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733221053966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n       background-color : ${(props) => props.theme.bg};\r\n       width : 100%;\r\n       height : 100%;\r\n       overflow : hidden;\r\n-      align\r\n+      align-content : center\r\n \r\n `;\r\n \r\n export const Wrapper = styled.div`\r\n"
+                },
+                {
+                    "date": 1733221133712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n       background-color : ${(props) => props.theme.bg};\r\n       width : 100%;\r\n       height : 100%;\r\n       overflow : hidden;\r\n-      align-content : center\r\n+      dispay\r\n \r\n `;\r\n \r\n export const Wrapper = styled.div`\r\n"
+                },
+                {
+                    "date": 1733221139242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n       background-color : ${(props) => props.theme.bg};\r\n       width : 100%;\r\n       height : 100%;\r\n       overflow : hidden;\r\n-      dispay\r\n+      display : flex\r\n \r\n `;\r\n \r\n export const Wrapper = styled.div`\r\n"
+                },
+                {
+                    "date": 1733221150977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n       background-color : ${(props) => props.theme.bg};\r\n       width : 100%;\r\n       height : 100%;\r\n       overflow : hidden;\r\n-      display : flex\r\n+      display : flex;\r\n+      flex-direction : column\r\n \r\n `;\r\n \r\n export const Wrapper = styled.div`\r\n"
+                },
+                {
+                    "date": 1733221156871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n       width : 100%;\r\n       height : 100%;\r\n       overflow : hidden;\r\n       display : flex;\r\n-      flex-direction : column\r\n+      flex-direction : column;\r\n \r\n `;\r\n \r\n export const Wrapper = styled.div`\r\n"
+                },
+                {
+                    "date": 1733221165317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n       height : 100%;\r\n       overflow : hidden;\r\n       display : flex;\r\n       flex-direction : column;\r\n+      align-items : center\r\n \r\n `;\r\n \r\n export const Wrapper = styled.div`\r\n"
+                },
+                {
+                    "date": 1733221184693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,14 +6,14 @@\n       height : 100%;\r\n       overflow : hidden;\r\n       display : flex;\r\n       flex-direction : column;\r\n-      align-items : center\r\n+      align-items : center;\r\n \r\n `;\r\n \r\n export const Wrapper = styled.div`\r\n-max-width : 100%;\r\n+             max-width : 100%;\r\n padding : 10px 0 100px 0;\r\n       background : linear-gradient{\r\n                           38.73deg,\r\n                           rgba(204, 0, 187, 0.15) 0%,\r\n"
+                },
+                {
+                    "date": 1733221191180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n `;\r\n \r\n export const Wrapper = styled.div`\r\n              max-width : 100%;\r\n-padding : 10px 0 100px 0;\r\n-      background : linear-gradient{\r\n+             padding : 10px 0 100px 0;\r\n+             background : linear-gradient{\r\n                           38.73deg,\r\n                           rgba(204, 0, 187, 0.15) 0%,\r\n                           rgba(201, 32, 184, 0) 50% },\r\n                    linear-gradient{\r\n"
+                },
+                {
+                    "date": 1733221198639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,7 +21,7 @@\n                    linear-gradient{\r\n                           141.27deg,\r\n                           rgba(0, 70, 209, 0) 50%,\r\n                           rgba(0, 70, 209, 0.15) 100% };\r\n-      width : 100%;\r\n-      clip-path : polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));\r\n+            width : 100%;\r\n+            clip-path : polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));\r\n  `;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733221206391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,6 +22,7 @@\n                           141.27deg,\r\n                           rgba(0, 70, 209, 0) 50%,\r\n                           rgba(0, 70, 209, 0.15) 100% };\r\n             width : 100%;\r\n+            dip\r\n             clip-path : polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));\r\n  `;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733221213760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,8 @@\n                           141.27deg,\r\n                           rgba(0, 70, 209, 0) 50%,\r\n                           rgba(0, 70, 209, 0.15) 100% };\r\n             width : 100%;\r\n-            dip\r\n+            display : flex;\r\n+            \r\n             clip-path : polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));\r\n  `;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733221220084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,7 +23,7 @@\n                           rgba(0, 70, 209, 0) 50%,\r\n                           rgba(0, 70, 209, 0.15) 100% };\r\n             width : 100%;\r\n             display : flex;\r\n-            \r\n+            flex-direction\r\n             clip-path : polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));\r\n  `;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733221227970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,7 +23,8 @@\n                           rgba(0, 70, 209, 0) 50%,\r\n                           rgba(0, 70, 209, 0.15) 100% };\r\n             width : 100%;\r\n             display : flex;\r\n-            flex-direction\r\n+            flex-direction : column;\r\n+            align-ite\r\n             clip-path : polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));\r\n  `;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1733221045375,
+            "name": "Commit-0",
+            "content": "import styled from \"styled-components\";\r\n\r\nexport const Body = styled.div`\r\n      background-color : ${(props) => props.theme.bg};\r\n      width : 100%;\r\n      height : 100%;\r\n      overflow : hidden;\r\n      align\r\n\r\n`;\r\n\r\nexport const Wrapper = styled.div`\r\nmax-width : 100%;\r\npadding : 10px 0 100px 0;\r\n      background : linear-gradient{\r\n                          38.73deg,\r\n                          rgba(204, 0, 187, 0.15) 0%,\r\n                          rgba(201, 32, 184, 0) 50% },\r\n                   linear-gradient{\r\n                          141.27deg,\r\n                          rgba(0, 70, 209, 0) 50%,\r\n                          rgba(0, 70, 209, 0.15) 100% };\r\n      width : 100%;\r\n      clip-path : polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));\r\n `;"
+        }
+    ]
+}

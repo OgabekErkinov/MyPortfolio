@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Card = styled.div`
-      width : 650px;
+      width : 80%;
       border-radius : 10px;
       box-shadow : 0px 0px 10px rgba(0, 0, 0, 0.1);
       padding : 12px 16px;
@@ -56,7 +56,7 @@ const Description = styled.div`
 
 const Span = styled.span`
       overflow : hidden;
-      dipslay : -webkit-box;
+      display : -webkit-box;
       -webkit-line-clamp : 4;
       -webkit-box-orient : vertical;
       max-width : 100%;

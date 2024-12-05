@@ -1,0 +1,134 @@
+{
+    "sourceFile": "src/Components/Hero/Hero.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 29,
+            "patches": [
+                {
+                    "date": 1732529989904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732529995857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, ResumeButton, Image } from './Styled-Components';\r\n const Hero = () => {\r\n   return (\r\n     <div id='about'>\r\n-      <HeroContainer id>\r\n+      <HeroContainer id='about'>\r\n         <HeroBg></HeroBg>\r\n         <HeroInnerContainer>\r\n              <HeroLeftContainer>\r\n                      <Title> Hi, I'm {myBio.name}</Title>\r\n"
+                },
+                {
+                    "date": 1732530001981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { myBio } from '../../Info/myInfo';\r\n import { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, ResumeButton, Image } from './Styled-Components';\r\n const Hero = () => {\r\n   return (\r\n-    <div id='about'>\r\n+   \r\n       <HeroContainer id='about'>\r\n         <HeroBg></HeroBg>\r\n         <HeroInnerContainer>\r\n              <HeroLeftContainer>\r\n@@ -27,9 +27,9 @@\n         </HeroInnerContainer>\r\n \r\n       </HeroContainer>\r\n \r\n-    </div>\r\n+  \r\n   )\r\n }\r\n \r\n export default Hero\r\n"
+                },
+                {
+                    "date": 1732530013257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n import { myBio } from '../../Info/myInfo';\r\n import { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, ResumeButton, Image } from './Styled-Components';\r\n const Hero = () => {\r\n   return (\r\n-   \r\n       <HeroContainer id='about'>\r\n         <HeroBg></HeroBg>\r\n         <HeroInnerContainer>\r\n              <HeroLeftContainer>\r\n"
+                },
+                {
+                    "date": 1733372853921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-              <ResumeButton>Check resume</ResumeButton>\r\n+              <ResumeButton h>Check resume</ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733372861811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-              <ResumeButton h>Check resume</ResumeButton>\r\n+              <ResumeButton href=>Check resume</ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733372869963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-              <ResumeButton href=>Check resume</ResumeButton>\r\n+              <ResumeButton href={myBio.}>Check resume</ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733373333441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-              <ResumeButton href={myBio.}>Check resume</ResumeButton>\r\n+              <ResumeButton href={myBio.resume}>\r\n+                 <NCheck resume</ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733373352379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n               <ResumeButton href={myBio.resume}>\r\n-                 <NCheck resume</ResumeButton>\r\n+                 <NvCheck resume</ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733373360505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import Typewriter from 'typewriter-effect'\r\n import { myBio } from '../../Info/myInfo';\r\n-import { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, ResumeButton, Image } from './Styled-Components';\r\n+import { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, ResumeButton, Image, NavLink } from './Styled-Components';\r\n const Hero = () => {\r\n   return (\r\n       <HeroContainer id='about'>\r\n         <HeroBg></HeroBg>\r\n@@ -18,9 +18,9 @@\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n               <ResumeButton href={myBio.resume}>\r\n-                 <NvCheck resume</ResumeButton>\r\n+                 <NavLinkCheck resume</ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733373369994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,10 @@\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n               <ResumeButton href={myBio.resume}>\r\n-                 <NavLinkCheck resume</ResumeButton>\r\n+                 <NavLink>\r\n+                  </NavLink></ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733373377718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,11 @@\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n               <ResumeButton href={myBio.resume}>\r\n                  <NavLink>\r\n-                  </NavLink></ResumeButton>\r\n+                    Check resume\r\n+                  </NavLink>\r\n+                </ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733373384892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,13 +17,13 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-              <ResumeButton href={myBio.resume}>\r\n+              <ResumeButton >\r\n                  <NavLink>\r\n                     Check resume\r\n                   </NavLink>\r\n-                </ResumeButton>\r\n+              </ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733373402088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-              <ResumeButton >\r\n-                 <NavLink>\r\n+             \r\n+                 <NavLink href={myBio.resume}>\r\n                     Check resume\r\n                   </NavLink>\r\n               </ResumeButton>\r\n              </HeroLeftContainer>\r\n"
+                },
+                {
+                    "date": 1733373407335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n              \r\n                  <NavLink href={myBio.resume}>\r\n+                    <ResumeButton >\r\n                     Check resume\r\n                   </NavLink>\r\n               </ResumeButton>\r\n              </HeroLeftContainer>\r\n"
+                },
+                {
+                    "date": 1733373412660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,11 @@\n              \r\n                  <NavLink href={myBio.resume}>\r\n                     <ResumeButton >\r\n                     Check resume\r\n+                    </ResumeButton>\r\n                   </NavLink>\r\n-              </ResumeButton>\r\n+              \r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733373572972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,11 +18,11 @@\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n              \r\n-                 <NavLink href={myBio.resume}>\r\n+                 <NavLink href={myBio.resume} target=\"_blank\" rel=\"noopener noreferrer\">\r\n                     <ResumeButton >\r\n-                    Check resume\r\n+                      Check resume\r\n                     </ResumeButton>\r\n                   </NavLink>\r\n               \r\n              </HeroLeftContainer>\r\n"
+                },
+                {
+                    "date": 1733374196111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n              \r\n                  <NavLink href={myBio.resume} target=\"_blank\" rel=\"noopener noreferrer\">\r\n-                    <ResumeButton >\r\n+                    <ResumeButton ty >\r\n                       Check resume\r\n                     </ResumeButton>\r\n                   </NavLink>\r\n               \r\n"
+                },
+                {
+                    "date": 1733374212980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,14 +18,12 @@\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n              \r\n-                 <NavLink href={myBio.resume} target=\"_blank\" rel=\"noopener noreferrer\">\r\n-                    <ResumeButton ty >\r\n-                      Check resume\r\n-                    </ResumeButton>\r\n+                 <NavLink href={myBio.resume}>\r\n+                    Check resume\r\n                   </NavLink>\r\n-              \r\n+              </ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733374221156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,13 +17,10 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-             \r\n-                 <NavLink href={myBio.resume}>\r\n-                    Check resume\r\n-                  </NavLink>\r\n-              </ResumeButton>\r\n+              <ResumeButton href={myBio.resume}>\r\n+                 <NavLink></NavLink>Check resume</ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733377066279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,36 @@\n+import Typewriter from 'typewriter-effect'\r\n+import { myBio } from '../../Info/myInfo';\r\n+import { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, ResumeButton, Image } from './Styled-Components';\r\n+const Hero = () => {\r\n+  return (\r\n+      <HeroContainer id='about'>\r\n+        <HeroBg></HeroBg>\r\n+        <HeroInnerContainer>\r\n+             <HeroLeftContainer>\r\n+                     <Title> Hi, I'm {myBio.name}</Title>\r\n+                      <TextLoop>I'm a \r\n+                               <Span>\r\n+                               <Typewriter options={{\r\n+                                           strings: myBio.roles,\r\n+                                           autoStart: true,\r\n+                                           loop : true\r\n+                                }}/>\r\n+                                </Span>\r\n+                      </TextLoop>\r\n+              <SubTitle>{myBio.description}</SubTitle>\r\n+              <ResumeButton href={myBio.resume} target=\"_blank\" rel=\"noopener noreferrer\">\r\n+  Check resume\r\n+</ResumeButton>\r\n+             </HeroLeftContainer>\r\n+             <HeroRightContainer>\r\n+                  <Image src = 'man.jpg' alt = 'Hero'/>\r\n+             </HeroRightContainer>\r\n+        </HeroInnerContainer>\r\n+\r\n+      </HeroContainer>\r\n+\r\n+  \r\n+  )\r\n+}\r\n+\r\n+export default Hero\r\n"
+                },
+                {
+                    "date": 1733377074230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,10 @@\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n               <ResumeButton href={myBio.resume} target=\"_blank\" rel=\"noopener noreferrer\">\r\n-  Check resume\r\n-</ResumeButton>\r\n+                            Check resume\r\n+              </ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n                   <Image src = 'man.jpg' alt = 'Hero'/>\r\n              </HeroRightContainer>\r\n@@ -33,39 +33,4 @@\n   )\r\n }\r\n \r\n export default Hero\r\n-import Typewriter from 'typewriter-effect'\r\n-import { myBio } from '../../Info/myInfo';\r\n-import { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, ResumeButton, Image, NavLink } from './Styled-Components';\r\n-const Hero = () => {\r\n-  return (\r\n-      <HeroContainer id='about'>\r\n-        <HeroBg></HeroBg>\r\n-        <HeroInnerContainer>\r\n-             <HeroLeftContainer>\r\n-                     <Title> Hi, I'm {myBio.name}</Title>\r\n-                      <TextLoop>I'm a \r\n-                               <Span>\r\n-                               <Typewriter options={{\r\n-                                           strings: myBio.roles,\r\n-                                           autoStart: true,\r\n-                                           loop : true\r\n-                                }}/>\r\n-                                </Span>\r\n-                      </TextLoop>\r\n-              <SubTitle>{myBio.description}</SubTitle>\r\n-              <ResumeButton href={myBio.resume}>\r\n-                 <NavLink></NavLink>Check resume</ResumeButton>\r\n-             </HeroLeftContainer>\r\n-             <HeroRightContainer>\r\n-                  <Image src = 'man.jpg' alt = 'Hero'/>\r\n-             </HeroRightContainer>\r\n-        </HeroInnerContainer>\r\n-\r\n-      </HeroContainer>\r\n-\r\n-  \r\n-  )\r\n-}\r\n-\r\n-export default Hero\r\n"
+                },
+                {
+                    "date": 1733377315295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,11 @@\n import Typewriter from 'typewriter-effect'\r\n import { myBio } from '../../Info/myInfo';\r\n import { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, ResumeButton, Image } from './Styled-Components';\r\n const Hero = () => {\r\n+  const handleResumeClick = () => {\r\n+    window.open(myBio.resume, \"_blank\");\r\n+  };\r\n   return (\r\n       <HeroContainer id='about'>\r\n         <HeroBg></HeroBg>\r\n         <HeroInnerContainer>\r\n"
+                },
+                {
+                    "date": 1733377326525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-              <ResumeButton href={myBio.resume} target=\"_blank\" rel=\"noopener noreferrer\">\r\n+              <ResumeButton onC>\r\n                             Check resume\r\n               </ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733377332025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-              <ResumeButton onC>\r\n+              <ResumeButton onClick={() }>\r\n                             Check resume\r\n               </ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733377337861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-              <ResumeButton onClick={() }>\r\n+              <ResumeButton onClick={() => handle}>\r\n                             Check resume\r\n               </ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733377690949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-              <ResumeButton onClick={() => handle}>\r\n+              <ResumeButton onClick={handleResumeClick}>\r\n                             Check resume\r\n               </ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733377790697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import Typewriter from 'typewriter-effect'\r\n import { myBio } from '../../Info/myInfo';\r\n-import { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, ResumeButton, Image } from './Styled-Components';\r\n+import { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, Image } from './Styled-Components';\r\n const Hero = () => {\r\n   const handleResumeClick = () => {\r\n     window.open(myBio.resume, \"_blank\");\r\n   };\r\n"
+                },
+                {
+                    "date": 1733377799920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-              <ResumeButton onClick={handleResumeClick}>\r\n+              <Resume onClick={handleResumeClick}>\r\n                             Check resume\r\n               </ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n"
+                },
+                {
+                    "date": 1733377816104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import Typewriter from 'typewriter-effect'\r\n import { myBio } from '../../Info/myInfo';\r\n-import { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, Image } from './Styled-Components';\r\n+import { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, Image, ResumeButton } from './Styled-Components';\r\n const Hero = () => {\r\n   const handleResumeClick = () => {\r\n     window.open(myBio.resume, \"_blank\");\r\n   };\r\n@@ -20,9 +20,9 @@\n                                 }}/>\r\n                                 </Span>\r\n                       </TextLoop>\r\n               <SubTitle>{myBio.description}</SubTitle>\r\n-              <Resume onClick={handleResumeClick}>\r\n+              <ResumeButton href={myBio.resume} target=\"_blank\" rel=\"noopener noreferrer\">\r\n                             Check resume\r\n               </ResumeButton>\r\n              </HeroLeftContainer>\r\n              <HeroRightContainer>\r\n"
+                }
+            ],
+            "date": 1732529989904,
+            "name": "Commit-0",
+            "content": "import Typewriter from 'typewriter-effect'\r\nimport { myBio } from '../../Info/myInfo';\r\nimport { HeroContainer, HeroBg, HeroInnerContainer, HeroLeftContainer, HeroRightContainer, Title, TextLoop, Span, SubTitle, ResumeButton, Image } from './Styled-Components';\r\nconst Hero = () => {\r\n  return (\r\n    <div id='about'>\r\n      <HeroContainer id>\r\n        <HeroBg></HeroBg>\r\n        <HeroInnerContainer>\r\n             <HeroLeftContainer>\r\n                     <Title> Hi, I'm {myBio.name}</Title>\r\n                      <TextLoop>I'm a \r\n                               <Span>\r\n                               <Typewriter options={{\r\n                                           strings: myBio.roles,\r\n                                           autoStart: true,\r\n                                           loop : true\r\n                                }}/>\r\n                                </Span>\r\n                      </TextLoop>\r\n              <SubTitle>{myBio.description}</SubTitle>\r\n              <ResumeButton>Check resume</ResumeButton>\r\n             </HeroLeftContainer>\r\n             <HeroRightContainer>\r\n                  <Image src = 'man.jpg' alt = 'Hero'/>\r\n             </HeroRightContainer>\r\n        </HeroInnerContainer>\r\n\r\n      </HeroContainer>\r\n\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Hero\r\n"
+        }
+    ]
+}

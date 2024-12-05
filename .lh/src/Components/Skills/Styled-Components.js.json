@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/Components/Skills/Styled-Components.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1732529803724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732529810288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n export const Container = styled.div`\r\n       display : flex;\r\n       margin : 28px 0;\r\n-      width : 90%;\r\n+      width : 100%;\r\n       max-width : 1660px;\r\n       flex-direction : column;\r\n       justify-content : center;\r\n       align-items : center;\r\n"
+                },
+                {
+                    "date": 1732529828498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       z-index : 1;    \r\n `;\r\n \r\n export const Wrapper = styled.div`\r\n-       max-width : 1100px;\r\n+       max-width : 1440px;\r\n        position : relative;\r\n        display : flex;\r\n        flex-direction : column;\r\n        justify-content : center;\r\n"
+                },
+                {
+                    "date": 1732529846281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n        flex-direction : column;\r\n        justify-content : center;\r\n        align-items : center;\r\n        width : 100%;\r\n-       gap : 12px;\r\n+       gap : 8px;\r\n `;\r\n \r\n export const Title = styled.div`\r\n        font-size : 42px;\r\n"
+                },
+                {
+                    "date": 1732529851912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n        flex-direction : column;\r\n        justify-content : center;\r\n        align-items : center;\r\n        width : 100%;\r\n-       gap : 8px;\r\n+       gap : 12px;\r\n `;\r\n \r\n export const Title = styled.div`\r\n        font-size : 42px;\r\n"
+                },
+                {
+                    "date": 1732529887790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n        width : 100%;\r\n        display : flex;\r\n        margin-top : 30px;\r\n        justify-content : space-between;\r\n-       gap : 30px;\r\n+       gap : 10px;\r\n \r\n         @media screen and (max-width : 768px) {\r\n                flex-wrap : wrap;\r\n       };\r\n"
+                },
+                {
+                    "date": 1732529932239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n export const SkillsContainer = styled.div`\r\n        width : 100%;\r\n        display : flex;\r\n        margin-top : 30px;\r\n-       justify-content : space-between;\r\n+       justify-content : center;\r\n        gap : 10px;\r\n \r\n         @media screen and (max-width : 768px) {\r\n                flex-wrap : wrap;\r\n"
+                }
+            ],
+            "date": 1732529803724,
+            "name": "Commit-0",
+            "content": "import styled from 'styled-components'\r\n\r\nexport const Container = styled.div`\r\n      display : flex;\r\n      margin : 28px 0;\r\n      width : 90%;\r\n      max-width : 1660px;\r\n      flex-direction : column;\r\n      justify-content : center;\r\n      align-items : center;\r\n      position : relative;\r\n      z-index : 1;    \r\n`;\r\n\r\nexport const Wrapper = styled.div`\r\n       max-width : 1100px;\r\n       position : relative;\r\n       display : flex;\r\n       flex-direction : column;\r\n       justify-content : center;\r\n       align-items : center;\r\n       width : 100%;\r\n       gap : 12px;\r\n`;\r\n\r\nexport const Title = styled.div`\r\n       font-size : 42px;\r\n       font-weight : 600;\r\n       text-align : center;\r\n       margin-top : 20px;\r\n       color : ${(props) => props.theme.text_primary};\r\n\r\n       @media screen and (max-width : 768px) {\r\n       margin-top : 12px;\r\n       font-size : 32px;\r\n       }\r\n`;\r\n\r\nexport const Desc = styled.div`\r\n      font-size : 18px;\r\n      text-align : center;\r\n      max-width : 600px;\r\n      color : ${(props) => props.theme.text_secondary};\r\n\r\n      @media screen and (max-width : 768px) {\r\n      font-size : 16px;\r\n      }\r\n\r\n`;\r\n\r\nexport const SkillsContainer = styled.div`\r\n       width : 100%;\r\n       display : flex;\r\n       margin-top : 30px;\r\n       justify-content : space-between;\r\n       gap : 30px;\r\n\r\n        @media screen and (max-width : 768px) {\r\n               flex-wrap : wrap;\r\n      };\r\n       `;\r\n\r\nexport const Skill = styled.div`\r\n      width : 100%;\r\n      max-width : 500px;\r\n      color : ${(props) => props.theme.card};\r\n      border : 0.1px solid #854CE6;\r\n      border-radius : 16px;\r\n      padding : 18px 36px;\r\n\r\n      @media screen and (max-width : 768px) {\r\n      max-width : 400px;\r\n      padding : 10px 36px;\r\n      };\r\n\r\n      @media screen and (max-width : 500px) {\r\n      max-width : 330px;\r\n      padding : 10px 36px;\r\n      }\r\n`;\r\n\r\nexport const SkillTitle = styled.h2`\r\n       font-size : 28px;\r\n       font-weight : 600;\r\n       color : ${(props) => props.theme.text_secondary};\r\n       margin-bottom : 20px;\r\n       text-align : center;\r\n`;\r\n\r\nexport const SkillList = styled.div`\r\n       display : flex;\r\n       justify-content : center;\r\n       flex-wrap : wrap;\r\n       gap : 12px;\r\n       margin-bottom : 20px;\r\n\r\n`;\r\n\r\nexport const SkillItem = styled.div`\r\n       display : flex;\r\n       align-items : center;\r\n       gap : 8px;\r\n       justify-content : center;\r\n       font-size : 16px;\r\n       color : ${(props) => props.theme.text_primary+80};\r\n       border-radius : 12px;\r\n       border : 1px solid ${(props) => props.theme.text_primary+80};\r\n       padding : 12px 16px;\r\n       font-weight : 400;\r\n       \r\n       @media screen and (max-width : 500px) {\r\n        font-size : 14px;\r\n        padding : 6px 12px; \r\n       }\r\n       `;\r\n\r\nexport const SkillImage = styled.img`\r\n      width : 24px;\r\n      height : 24px;\r\n      `;"
+        }
+    ]
+}
