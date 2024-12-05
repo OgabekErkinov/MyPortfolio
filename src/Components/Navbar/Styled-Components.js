@@ -125,9 +125,9 @@ export const MobileMenu = styled.div`
       justify-content : center;
       gap : 16px;
       position : absolute;
-      top : 80;
-      right : 0;
-      width : 100%;
+      top : 60px;
+      right : 10px;
+      width : 50%;
       padding : 12px 40px 24px 40px;
       background : ${(props) => props.theme.card_light + 90};
       transition : all 0.3s ease-in-out;

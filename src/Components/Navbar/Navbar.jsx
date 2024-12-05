@@ -7,6 +7,13 @@ import { Nav, NavContainer, NavItems, NavLink, NavLogo, MobileIcon, MobileMenu, 
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
+  const handleClick = (id) => {
+    const element = document.getElementById(id)
+    window.scrollTo({
+      top : element.offsetTop
+    })
+    setOpen(false)
+  }
 
 
   return (
@@ -40,24 +47,24 @@ const Navbar = () => {
       </NavContainer>
 
       {open && <MobileMenu>
-        <MobileMenuLink href = '#about' onClick = {()=> setOpen(!open)}>
+        <MobileMenuLink onClick = {()=>handleClick('about')}>
           About
         </MobileMenuLink>
 
-        <MobileMenuLink href = '#skills' onClick = {()=>setOpen(!open)}>
+        <MobileMenuLink onClick = {()=>handleClick('skills')}>
           Skills
         </MobileMenuLink>
 
-        <MobileMenuLink href = '#project' onClick = {()=>setOpen(!open)}>
+        <MobileMenuLink onClick = {()=>handleClick('projects')}>
           Projects
         </MobileMenuLink>
 
-        <MobileMenuLink href = '#education' onClick = {()=>setOpen(!open)}>
+        <MobileMenuLink onClick = {()=>handleClick('education')}>
           Education
         </MobileMenuLink>
 
         <MobileMenuLink>
-            <GithubButton href = {myBio.github} onClick = {()=>setOpen(!open)}>
+            <GithubButton href = {myBio.github} onClick = {()=>setOpen(false)}>
                 Github Profile
             </GithubButton>
         </MobileMenuLink>

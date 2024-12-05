@@ -142,7 +142,7 @@ export const projects = [
       tags: ["React Js", "HTML", "CSS", "Js", "TanStack query", "Routing", "Material UI"],
       category: "web app",
       github: "https://github.com/OgabekErkinov/myMovieApp.git",
-      webapp: "https://todo-list-redux-toolkit-ashen.vercel.app/",
+      webapp: "https://movie-app-6izg.vercel.app/",
       member: [
         {
           name: "Ogabek Erkinov",
@@ -164,13 +164,13 @@ export const projects = [
       tags: ["React Js", "HTML", "CSS", "Js"],
       category: "web app",
       github: "https://github.com/OgabekErkinov/myMovieApp.git",
-      webapp: "https://myfakeapp.netlify.app/",
+      webapp: "https://my-calc-omega.vercel.app/",
       member: [
         {
           name: "Ogabek Erkinov",
           img: "https://avatars.githubusercontent.com/u/64485885?v=4",
           linkedin: "www.linkedin.com/in/ogabek-erkinov",
-          github: "https://github.com/OgabekErkinov",
+          github: "https://mycalculatorforpractise.netlify.app/",
         },
 
         
