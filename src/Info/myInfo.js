@@ -5,7 +5,7 @@ export const myBio = {
         'Programmer'
     ],
     description : "Having a strong interest and motivation in the field, striving for development and new levels, we will achieve new goals and dreams together..!",
-    resume : 'https://docs.google.com/presentation/d/1ye52WW2lDOwEzxHQWrIjLi4xKoUTXDUB/edit?usp=sharing&ouid=113379273223169295284&rtpof=true&sd=true',
+    resume : 'https://drive.google.com/file/d/1aS1pgP_gqrEfAppGD2G1Gc1DM1cWRv69/view?usp=drive_link',
     github : 'https://github.com/OgabekErkinov?tab=repositories'
 }
 
@@ -19,7 +19,7 @@ export const skills = [
             },
             {
                 name : 'CSS',
-                image : 'https://www.shareicon.net/download/2015/09/17/102374_css3_512x512.png'
+                image : '/css.png'
             },
             {
                 name : 'JavaScript',
@@ -39,7 +39,7 @@ export const skills = [
             },
             {
                 name : 'Material UI',
-                image : 'https://www.svgrepo.com/show/503420/material-ui.svg'
+                image : '/mui.png'
             },
             {
               name : 'Chakra UI',
@@ -52,6 +52,18 @@ export const skills = [
           {
             name : 'GSAP',
             image : 'https://cdn.icon-icons.com/icons2/2389/PNG/512/greensock_logo_icon_145217.png'
+          },
+          {
+            name : 'TailwindCss',
+            image : '/tailw-icon.png'
+          },
+          {
+            name : 'Zustand',
+            image : '/zustand.png'
+          },
+          {
+            name : 'redux-toolkit',
+            image : '/toolkit.webp'
           }
         ]
 
@@ -97,21 +109,70 @@ export const education = [
       date: "Oct 2023 - Apr 2024",
       grade: "Junior",
       desc: "I studied at the Uzprogers academy to learn basic of front end",
-      degree: "Starter, Front End developer",
+      degree: "Intern Front End developer",
     },
     {
       id: 3,
       img: "https://api.modme.uz/uploads/hroEcn3WyfWVyzSm.png",
       school: "Open Web Academy",
       date: "Apr 2024 - Sep 2024",
-      grade: "Strong Junior",
+      grade: "Front end Dev",
       desc: "I studied at the open web academy to further develop my knowledge and take it to a new level.",
       degree: "Strong Junior, Front End developer",
+    },
+    {
+      id: 4,
+      img: "/ittime.png",
+      school: "IT time",
+      date: "Dec 2024 - March 2025",
+      grade: "Front end Dev.",
+      desc: "",
+      degree: "Front End developer",
     },
     
   ];
   
 export const projects = [
+  {
+    id: 12,
+    title: "i-am-tourist",
+    description:
+      "Responsive ticket booking website. It uses technologies such as global state and axios.",
+    image:
+      "/logo.webp",
+    tags: ["React Js", "Js", "Redux-Toolkit", 'i18next', 'MUI','Axios'],
+    category: "web app",
+    github: "",
+    webapp: "https://i-am-tourist.vercel.app/",
+    member: [
+      {
+        name: "Ogabek Erkinov",
+        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+        linkedin: "www.linkedin.com/in/ogabek-erkinov",
+        github: "https://github.com/OgabekErkinov",
+      },
+    ],
+  },
+  {
+    id: 13,
+    title: "lux-furnitures",
+    description:
+      "A responsive, bright multi-page website providing information about custom-made furniture. It has options for contacting and asking the admin for information.",
+    image:
+      "/lux.webp",
+    tags: ["React Js", "Js", "Zustand", 'i18next', 'MUI','Axios'],
+    category: "web app",
+    github: "",
+    webapp: "https://chinar-uz-clone.vercel.app/",
+    member: [
+      {
+        name: "Ogabek Erkinov",
+        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+        linkedin: "www.linkedin.com/in/ogabek-erkinov",
+        github: "https://github.com/OgabekErkinov",
+      },
+    ],
+  },
     {
       id: 4,
       title: "todoList",
@@ -133,16 +194,37 @@ export const projects = [
       ],
     },
     {
-      id: 5,
-      title: "movieSite",
+      id: 14,
+      title: "CineNova",
       description:
         "A list of the most popular and new movies can be viewed using the TMDB API. On the site, it is easy to find movies sorted randomly, similar to the selected movie, from the search system, genre filtering functions.",
       image:
         "https://play-lh.googleusercontent.com/TGAuCSkAX7S78Ee5L9GehklsERXUq213nww-Lnrm1uhNmZF59U5ki4zUuvJtvVIs7A",
       tags: ["React Js", "HTML", "CSS", "Js", "TanStack query", "Routing", "Material UI"],
       category: "web app",
-      github: "https://github.com/OgabekErkinov/myMovieApp.git",
-      webapp: "https://movie-app-6izg.vercel.app/",
+      github: "",
+      webapp: "https://cine-nova.vercel.app/",
+      member: [
+        {
+          name: "Ogabek Erkinov",
+          img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+          linkedin: "www.linkedin.com/in/ogabek-erkinov",
+          github: "https://github.com/OgabekErkinov",
+        },
+
+      ],
+    },
+    {
+      id: 15,
+      title: "Propartnor",
+      description:
+        "",
+      image:
+        "/propartnor.png",
+      tags: ["React Js","Js","tailwind", "Routing"],
+      category: "web app",
+      github: "",
+      webapp: "https://propartnyor.uz/",
       member: [
         {
           name: "Ogabek Erkinov",
