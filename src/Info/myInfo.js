@@ -2,7 +2,10 @@ export const myBio = {
     name : 'Ogabek Erkinov',
     roles : [
         'Front End developer',
-        'Programmer'
+        'Backend developer',
+        'FullStack developer',
+        'Programmer',
+
     ],
     description : "Having a strong interest and motivation in the field, striving for development and new levels, we will achieve new goals and dreams together..!",
     resume : 'https://drive.google.com/file/d/1aS1pgP_gqrEfAppGD2G1Gc1DM1cWRv69/view?usp=drive_link',
@@ -59,7 +62,7 @@ export const skills = [
           },
           {
             name : 'Zustand',
-            image : '/zustand.png'
+            image : 'https://avatars.githubusercontent.com/u/160464953?s=200&v=4'
           },
           {
             name : 'redux-toolkit',
@@ -69,15 +72,38 @@ export const skills = [
 
     },
     {
+      title : 'Backend',
+      skill : [
+        {
+          name : 'NodeJS',
+          image : 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png'
+        },
+        {
+          name : 'ExpressJS',
+          image : 'https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png'
+        },
+        {
+          name : 'MongoDB',
+          image : 'https://img.icons8.com/color/512/mongodb.png'
+        }
+      ]
+
+    },
+    {
       title : 'Others',
       skill : [
           {
               name : 'Git',
-              image : 'https://e7.pngegg.com/pngimages/685/833/png-clipart-red-sign-logo-git-logo-icons-logos-emojis-tech-companies-thumbnail.png'
+              image : 'https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-512.png'
           },
           {
             name : 'Github',
             image : 'https://ouch-cdn2.icons8.com/_qv0GZ-TvUNz7L6kTDY6jQTK0ZL8PBgeSRketqzOyB0/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNDEw/LzY2ZThhYzc1LTJh/ZjAtNDk4MC1hNThl/LWMwOWY0NWIyM2Mz/NS5wbmc.png'
+          },
+          {
+            name : 'Trello',
+            image : 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/31/ea/7a/31ea7ab9-e0b4-7b7c-53f3-ea383dab92ef/electron.png/1200x630bb.png'
+
           },
         {
           name : 'Excel',

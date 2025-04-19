@@ -49,7 +49,7 @@ export const Desc = styled.div`
 `;
 
 export const SkillsContainer = styled.div`
-       width : 100%;
+       width : 90%;
        display : flex;
        margin-top : 30px;
        justify-content : center;
@@ -59,14 +59,61 @@ export const SkillsContainer = styled.div`
                flex-wrap : wrap;
       };
        `;
+export const SkillTypeContainer = styled.div`
+      width : 70%;
+      max-width : 500px;
+      color : ${(props) => props.theme.card};
+      border-radius : 16px;
+      padding : 18px 36px;
+      display : flex;
+      align-items : center;
+      gap : 12px;
 
-export const Skill = styled.div`
+      @media screen and (max-width : 768px) {
+      max-width : 400px;
+      padding : 10px 36px;
+      };
+
+      @media screen and (max-width : 500px) {
+      max-width : 330px;
+      padding : 10px 36px;
+      }
+       
+`
+
+export const SkillType = styled.div`
       width : 100%;
       max-width : 500px;
       color : ${(props) => props.theme.card};
       border : 0.1px solid #854CE6;
       border-radius : 16px;
+      padding : 6px 18px;
+
+      display : flex;
+      align-items : center;
+      justify-content : center;
+
+      @media screen and (max-width : 768px) {
+      max-width : 400px;
+      padding : 6px 18px;
+      };
+
+      @media screen and (max-width : 500px) {
+      max-width : 330px;
+      padding : 6px 18px;
+      }
+`
+
+export const Skill = styled.div`
+      width : 100%;
+      height : 100%;
+      color : ${(props) => props.theme.card};
+      border : 0.1px solid #854CE6;
+      border-radius : 16px;
       padding : 18px 36px;
+
+      display : flex;
+      align-items : center;
 
       @media screen and (max-width : 768px) {
       max-width : 400px;
@@ -79,25 +126,31 @@ export const Skill = styled.div`
       }
 `;
 
-export const SkillTitle = styled.h2`
+export const SkillTitle = styled.div`
+height : 100%;
+width : 150px;
+display : flex;
+align-items : center;
+justify-content : center;
        font-size : 28px;
        font-weight : 600;
        color : ${(props) => props.theme.text_secondary};
-       margin-bottom : 20px;
        text-align : center;
 `;
 
 export const SkillList = styled.div`
+       width : 100%;
        display : flex;
-       justify-content : center;
-       flex-wrap : wrap;
+       justify-content : space-evenly;
        gap : 12px;
-       margin-bottom : 20px;
 
 `;
 
 export const SkillItem = styled.div`
+       height : 120px;
+       width : 180px;
        display : flex;
+       flex-direction : column;
        align-items : center;
        gap : 8px;
        justify-content : center;
@@ -115,6 +168,6 @@ export const SkillItem = styled.div`
        `;
 
 export const SkillImage = styled.img`
-      width : 24px;
-      height : 24px;
+      width : 80px;
+      height : 72px;
       `;
