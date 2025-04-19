@@ -8,7 +8,7 @@ export const myBio = {
 
     ],
     description : "Having a strong interest and motivation in the field, striving for development and new levels, we will achieve new goals and dreams together..!",
-    resume : 'https://drive.google.com/file/d/1aS1pgP_gqrEfAppGD2G1Gc1DM1cWRv69/view?usp=drive_link',
+    resume : 'https://drive.google.com/file/d/1aBkobeaqi1vzG-86Q6JtEJxp1LREXpyC/view?usp=drive_link',
     github : 'https://github.com/OgabekErkinov?tab=repositories'
 }
 

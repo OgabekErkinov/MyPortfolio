@@ -3,6 +3,7 @@ import { Education, Hero, Navbar, Projects, Skills } from '../Components/index'
 import { Body, Wrapper } from "./StyledComponents"
 import { darkTheme } from "../Utils/Theme"
 import Contact from "../Components/Contact/Contact"
+import Footer from "../Components/Footer/Footer"
 
 const Layout = () => {
   return (
@@ -20,6 +21,7 @@ const Layout = () => {
       <Wrapper>
          <Contact/>   
       </Wrapper> 
+      <Footer/>
     </Body>
   </ThemeProvider>
   )

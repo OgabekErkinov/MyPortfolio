@@ -9,7 +9,7 @@ export const Container = styled.div`
       align-items : center;
       position : relative;
       z-index : 1;
-      padding : 40px 0px 80px 0px;
+      padding : 20px 0px 20px 0px;
 
       @media (max-width : 960px) {
       padding : 0px;
@@ -53,7 +53,7 @@ export const Desc = styled.div`
 `;
 
 export const TimeLineSection = styled.div`
-       width : 70%;
+       width : 80%;
        max-width : 1440px;
        box-sizing : border-box;
        margin : 10px 30px 0 0;
