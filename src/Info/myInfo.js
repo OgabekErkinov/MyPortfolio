@@ -138,15 +138,6 @@ export const education = [
       degree: "Intern Front End developer",
     },
     {
-      id: 3,
-      img: "https://api.modme.uz/uploads/hroEcn3WyfWVyzSm.png",
-      school: "Open Web Academy",
-      date: "Apr 2024 - Sep 2024",
-      grade: "Front end Dev",
-      desc: "I studied at the open web academy to further develop my knowledge and take it to a new level.",
-      degree: "Strong Junior, Front End developer",
-    },
-    {
       id: 4,
       img: "/ittime.png",
       school: "IT time",
@@ -165,11 +156,11 @@ export const projects = [
     description:
       "Responsive ticket booking website. It uses technologies such as global state and axios.",
     image:
-      "/logo.webp",
+      "https://www.iamtourist.uz/logo.webp",
     tags: ["React Js", "Js", "Redux-Toolkit", 'i18next', 'MUI','Axios'],
-    category: "web app",
+    category: "Front End",
     github: "",
-    webapp: "https://i-am-tourist.vercel.app/",
+    webapp: "https://www.iamtourist.uz/",
     member: [
       {
         name: "Ogabek Erkinov",
@@ -185,11 +176,11 @@ export const projects = [
     description:
       "A responsive, bright multi-page website providing information about custom-made furniture. It has options for contacting and asking the admin for information.",
     image:
-      "/lux.webp",
+      "https://www.lux-furnitures.uz/logo.webp",
     tags: ["React Js", "Js", "Zustand", 'i18next', 'MUI','Axios'],
-    category: "web app",
+    category: "Front End",
     github: "",
-    webapp: "https://chinar-uz-clone.vercel.app/",
+    webapp: "https://www.lux-furnitures.uz/",
     member: [
       {
         name: "Ogabek Erkinov",
@@ -207,7 +198,7 @@ export const projects = [
       image:
         "https://sun9-29.userapi.com/impg/dRYLu3SFj0AJOj3hGOhVMTVBvAq_t4F2uHZmdQ/QSZx8jKVFO4.jpg?size=1200x1200&quality=95&sign=268181d7862515bcadc8af06d6b28ed5&c_uniq_tag=efbbyhfpbYSBKXcUC4zNHCavrF-N_BoOLeA0NIgzfco&type=album",
       tags: ["React Js", "HTML", "CSS", "Js", "Redux-Toolkit"],
-      category: "web app",
+      category: "Logic Task",
       github: "https://github.com/OgabekErkinov/todoList-redux-toolkit-.git",
       webapp: "https://todo-list-redux-toolkit-ashen.vercel.app/",
       member: [
@@ -225,9 +216,9 @@ export const projects = [
       description:
         "A list of the most popular and new movies can be viewed using the TMDB API. On the site, it is easy to find movies sorted randomly, similar to the selected movie, from the search system, genre filtering functions.",
       image:
-        "https://play-lh.googleusercontent.com/TGAuCSkAX7S78Ee5L9GehklsERXUq213nww-Lnrm1uhNmZF59U5ki4zUuvJtvVIs7A",
+        "https://cine-nova.vercel.app/logo.png",
       tags: ["React Js", "HTML", "CSS", "Js", "TanStack query", "Routing", "Material UI"],
-      category: "web app",
+      category: "Logic Task",
       github: "",
       webapp: "https://cine-nova.vercel.app/",
       member: [
@@ -244,11 +235,11 @@ export const projects = [
       id: 15,
       title: "Propartnor",
       description:
-        "",
+        "Propartnor is a multilingual and responsive web application built with powerful technologies like Tailwind CSS for modern styling, Redux for state management, and React Router for seamless navigation. With integrated i18n support, the platform offers a localized experience for users across different regions.",
       image:
         "/propartnor.png",
-      tags: ["React Js","Js","tailwind", "Routing"],
-      category: "web app",
+      tags: ["React Js","Js","tailwind", "Routing", "i18next", "Redux"],
+      category: "Front End",
       github: "",
       webapp: "https://propartnyor.uz/",
       member: [
@@ -270,7 +261,7 @@ export const projects = [
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Calculator_icon.svg/800px-Calculator_icon.svg.png",
       tags: ["React Js", "HTML", "CSS", "Js"],
-      category: "web app",
+      category: "Logic Task",
       github: "https://github.com/OgabekErkinov/myMovieApp.git",
       webapp: "https://my-calc-omega.vercel.app/",
       member: [
@@ -279,6 +270,28 @@ export const projects = [
           img: "https://avatars.githubusercontent.com/u/64485885?v=4",
           linkedin: "www.linkedin.com/in/ogabek-erkinov",
           github: "https://mycalculatorforpractise.netlify.app/",
+        },
+
+        
+      ],
+    },
+    {
+      id: 123,
+      title: "Ganget",
+      description:
+        "Ganget is a fully responsive and modern e-commerce website built with advanced features such as client-side routing, dynamic product filtering, and global state management using Zustand. It delivers a smooth and intuitive user experience across all devices.",
+      image:
+        "https://ganget.vercel.app/Vector.svg",
+      tags: ["React Js", "Routing", "MUI", "Zustand", "Json-server", "Api", "Google Map", "Swiper"],
+      category: "Front End",
+      github: "https://github.com/OgabekErkinov/ganget.git",
+      webapp: "https://ganget.vercel.app/",
+      member: [
+        {
+          name: "Ogabek Erkinov",
+          img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+          linkedin: "www.linkedin.com/in/ogabek-erkinov",
+          github: "https://github.com/OgabekErkinov/ganget.git",
         },
 
         

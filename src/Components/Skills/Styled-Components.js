@@ -67,11 +67,13 @@ export const SkillTypeContainer = styled.div`
       padding : 18px 36px;
       display : flex;
       align-items : center;
+      justify-content : center;
       gap : 12px;
 
       @media screen and (max-width : 768px) {
-      max-width : 400px;
+      width : 100%;
       padding : 10px 36px;
+      overflow : auto;
       };
 
       @media screen and (max-width : 500px) {
@@ -83,24 +85,24 @@ export const SkillTypeContainer = styled.div`
 
 export const SkillType = styled.div`
       width : 100%;
-      max-width : 500px;
+      max-width : 250px;
       color : ${(props) => props.theme.card};
       border : 0.1px solid #854CE6;
       border-radius : 16px;
-      padding : 6px 18px;
+      padding : 6px;
 
       display : flex;
       align-items : center;
       justify-content : center;
 
       @media screen and (max-width : 768px) {
-      max-width : 400px;
-      padding : 6px 18px;
+      max-width : 220px;
+      padding : 6px;
       };
 
       @media screen and (max-width : 500px) {
-      max-width : 330px;
-      padding : 6px 18px;
+      max-width : 220px;
+      padding : 6px;
       }
 `
 
@@ -127,11 +129,12 @@ export const Skill = styled.div`
 `;
 
 export const SkillTitle = styled.div`
-height : 100%;
-width : 150px;
-display : flex;
-align-items : center;
-justify-content : center;
+       height : 100%;
+       width : 150px;
+       display : flex;
+       align-items : center;
+       justify-content : center;
+       padding : 0 8px 0 0; 
        font-size : 28px;
        font-weight : 600;
        color : ${(props) => props.theme.text_secondary};
@@ -147,7 +150,7 @@ export const SkillList = styled.div`
 `;
 
 export const SkillItem = styled.div`
-       height : 120px;
+       height : 140px;
        width : 180px;
        display : flex;
        flex-direction : column;

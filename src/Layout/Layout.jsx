@@ -2,6 +2,7 @@ import { ThemeProvider } from "styled-components"
 import { Education, Hero, Navbar, Projects, Skills } from '../Components/index'
 import { Body, Wrapper } from "./StyledComponents"
 import { darkTheme } from "../Utils/Theme"
+import Contact from "../Components/Contact/Contact"
 
 const Layout = () => {
   return (
@@ -15,7 +16,10 @@ const Layout = () => {
        </Wrapper>
        <Wrapper>
            <Education/>
-      </Wrapper>   
+      </Wrapper>  
+      <Wrapper>
+         <Contact/>   
+      </Wrapper> 
     </Body>
   </ThemeProvider>
   )

@@ -61,13 +61,16 @@ export const ToggleButton = styled.div`
        padding : 8px 18px;
        cursor : pointer;
        border-radius : 8px;
+       color : #fff;
+       transition : 0.4s;
        
        ${(active) => {
         active && `
-        background-color : ${(props) => props.theme.primary + 20}`}
+        background-color : ${(props) => props.theme.primary}`}
        }
        &:hover {
-       background-color : ${(props) => props.theme.primary + 8}
+       background-color : ${(props) => props.theme.primary};
+       transition : 0.4s;
        }}`
 
 export const Divider = styled.div`

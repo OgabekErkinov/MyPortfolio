@@ -20,7 +20,7 @@ const Skills = () => {
        <Wrapper>
         <Title>Skills</Title>
         <Desc>
-          Here some of my skills which on which I have learned
+        These are the tools, technologies, and languages I regularly work with and continue to grow in.
         </Desc>
         <SkillTypeContainer>
           {
